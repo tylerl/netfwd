@@ -1,4 +1,4 @@
-A simple TCP forwarder with optional encryption
+A TLS-capable TCP forwarder
 ===============================================
 
 `netfwd` is a general-purpose TCP forwarder with optional encryption.
