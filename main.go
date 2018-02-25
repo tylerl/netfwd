@@ -161,6 +161,7 @@ func getconfig() {
 		ltlsconf.Certificates = []tls.Certificate{kp}
 	}
 	if conf.rtls {
+		rtlsconf.ServerName = strings.Split(conf.remote, ":")[0]
 		if conf.cacerts != "" {
 			if conf.cacerts == "-" {
 				rtlsconf.InsecureSkipVerify = true
